@@ -1,0 +1,20 @@
+version: "3.3"
+services:
+  server:
+    build: ./server/
+    networks:
+      - central
+    volumes:
+      - type: volume
+        source: cool-volume
+        target: /volume-data
+  sender:
+    build: ./sender/
+    networks:
+      - central
+
+networks:
+  central:
+
+volumes:
+  cool-volume:
