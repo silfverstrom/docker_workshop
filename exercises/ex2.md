@@ -22,6 +22,14 @@ docker run -d -it --name c1 --network <network_name> ubuntu
 docker run -d -it --name c2 --network <network_name> ubuntu
 ```
 
+Some headsup: Ping is not installed as default in ubuntu.
+If you want to try and ping the containers run the following in your ubuntu container.
+
+```
+apt-get update
+apt-get install iputils-ping
+```
+
 These containers will now be able to reach each other
 
 # 2.3 Disconnect a container
