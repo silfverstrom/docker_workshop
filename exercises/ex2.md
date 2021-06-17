@@ -66,7 +66,7 @@ Attach to the container and verify that the target directory exists.
 
 # 2.6 Make a local change
 
-Make a local change in the <target> direcoty of your created volume.
+Make a local change in the <target> directory of your created volume.
 After you've made the local change, stop and kill the container.
 
 After this, create a new container and attach it to your previous volume.
