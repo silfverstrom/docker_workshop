@@ -38,7 +38,7 @@ docker rm <container>
 
 Start a new container using the ubuntu image
 
-Run the following argumnet as default
+Run the following argument as default
 
 ```
 /bin/sh -c  "while true; do echo hello world; sleep 1; done"

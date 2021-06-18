@@ -4,7 +4,7 @@ In this exercise we will build our own docker images that starts a simple http s
 
 ## 3.1 - Write the docker file
 
-You can find all the code for the node server in the exercise-3 folder. It is in this directory you will create your docker file.
+You can find all the code for the node server in the exercise-3 folder. It is in this directory you will create your dockerfile.
 
 The server is built using node so a good base image is `node:latest`, which comes packaged with everything we need.
 
@@ -12,7 +12,7 @@ After that you need to add the files in exercise-3 directory to your docker imag
 
 To install the dependency for the server you need to run `npm install .` in the directory where you copied your files.
 
-The server listens to traffic on port 3000 soo don't forget to expose that port.
+The server listens to traffic on port 3000 so don't forget to expose that port.
 
 After that the only step left is to start the server, you do that with `node index.js`.
 

@@ -2,6 +2,8 @@
 
 In this exercise we will use docker-compose to start multiple docker containers.
 
+A headsup: You might need to add a .npmrc file to bypass proxy-settings.
+
 ## 4.1 - starting a single service
 
 As a first step you will build and start at single service. Start by creating your `docker-compose.yml` file in the `exercise-4` directory. Use docker compose version 3.9.

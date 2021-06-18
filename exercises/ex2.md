@@ -22,6 +22,14 @@ docker run -d -it --name c1 --network <network_name> ubuntu
 docker run -d -it --name c2 --network <network_name> ubuntu
 ```
 
+Some headsup: Ping is not installed as default in ubuntu.
+If you want to try and ping the containers run the following in your ubuntu container.
+
+```
+apt-get update
+apt-get install iputils-ping
+```
+
 These containers will now be able to reach each other
 
 # 2.3 Disconnect a container
@@ -58,7 +66,7 @@ Attach to the container and verify that the target directory exists.
 
 # 2.6 Make a local change
 
-Make a local change in the <target> direcoty of your created volume.
+Make a local change in the <target> directory of your created volume.
 After you've made the local change, stop and kill the container.
 
 After this, create a new container and attach it to your previous volume.
