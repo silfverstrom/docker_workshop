@@ -5,4 +5,4 @@ function testFunction() {
 }
 
 console.log('Executed tests');
-assert(testFunction() < 1000);
+assert(testFunction() > 1000);

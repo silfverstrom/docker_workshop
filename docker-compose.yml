@@ -1,0 +1,9 @@
+
+services:
+    db:
+        build: .
+    frontend:
+        build: .
+    mongodb:
+        image: ubuntu
+
