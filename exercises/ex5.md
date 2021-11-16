@@ -8,7 +8,7 @@ stage.
 Our goal is to be able to build only the test stage and only the build stage of
 the application, but add all common dependencies as a base stage.
 
-When we're ddone we should be able to run:
+When we're done we should be able to run:
 
 ```
 docker build -t test --target test
